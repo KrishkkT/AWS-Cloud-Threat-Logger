@@ -27,7 +27,7 @@ Here’s how everything works together:
 5. **IAM Roles** make sure each service has the right permissions.
 
 **Architecture Diagram:**  
-![Architecture Diagram](/Screenshots/architecture.png)
+![Architecture Diagram](/Screenshots/Architecture.png)
 
 ---
 
@@ -52,7 +52,7 @@ Before you start, make sure you have:
 5. Leave other settings as default (or adjust as needed).
 6. Click **Create bucket**.
 
-![S3 Bucket Creation](/Screenshots/s3-bucket.png)
+![S3 Bucket Creation](/Screenshots/S3_Home.png)
 
 ---
 
@@ -66,7 +66,7 @@ Before you start, make sure you have:
 6. (Optional) Enable **log file SSE encryption** for extra security.
 7. Click **Create trail**.
 
-![CloudTrail Setup](/Screenshots/cloudtrail-setup.png)
+![CloudTrail Setup](/Screenshots/CloudTrail_Home.png)
 
 ---
 
@@ -79,7 +79,7 @@ Before you start, make sure you have:
 5. Repeat for your recipient (To) email address.
 6. If SES is in **Sandbox mode**, both sender and recipient must be verified.
 
-![SES Verification](/Screenshots/ses-verification.png)
+![SES Verification](/Screenshots/SES_Dashboard.png)
 
 ---
 
@@ -97,7 +97,7 @@ Before you start, make sure you have:
 7. Name your role, e.g., `lambda-cloud-threat-logger-role`.
 8. Click **Create role**.
 
-![IAM Role](/Screenshots/iam-role.png)
+![IAM Role](/Screenshots/IAM_Roles.png)
 
 ---
 
@@ -111,7 +111,7 @@ Before you start, make sure you have:
 6. Under **Permissions**, choose **Use an existing role** and select the IAM role you created earlier.
 7. Click **Create function**.
 
-![Lambda Creation](/Screenshots/lambda-create.png)
+![Lambda Creation](/Screenshots/Lambda_Home.png)
 
 ---
 
@@ -121,7 +121,7 @@ Before you start, make sure you have:
 2. Copy and paste the provided Python code (see `/lambda_function.py` in this repo).
 3. Click **Deploy** to save your changes.
 
-![Lambda Code Upload](/Screenshots/lambda-code.png)
+![Lambda Code Upload](/Screenshots/Lambda_Code.png)
 
 ---
 
@@ -134,7 +134,7 @@ Before you start, make sure you have:
 5. For **Event type**, choose **All object create events**.
 6. Click **Add**.
 
-![Lambda S3 Trigger](/Screenshots/lambda-s3-trigger.png)
+![Lambda S3 Trigger](/Screenshots/S3_LogFile.png)
 
 ---
 
@@ -144,7 +144,7 @@ Before you start, make sure you have:
 2. Check your email for an alert from SES.
 3. If you receive an email, everything is working!
 
-![Alert Email](/Screenshots/alert-email.png)
+![Alert Email](/Screenshots/Alert_Email.png)
 
 ---
 
