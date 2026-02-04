@@ -183,7 +183,7 @@ AWS-Cloud-Threat-Logger/
 
 ---
 
-Made by **Krish Thakker** and **Akhil Shah**.
+Made by **Krish Thakker** and **[Akhil Shah](https://github.com/akhilshah179)**.
 
 ## 🙋 Need Help?
 
